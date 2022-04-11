@@ -20,6 +20,7 @@
             </Label.FormattedText>
         </Label>
         <Button x:Name="butC" Text="Tlačítko" BackgroundColor="#2196F3" Clicked="ButC_Clicked" CornerRadius="15" Margin="40"/>
+        
     </StackLayout>
 
 </ContentPage>
