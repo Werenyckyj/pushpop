@@ -1,13 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="pushpop.Page2">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Page 2"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand"
-                   FontSize="Header"/>
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+             xmlns:vivers="clr-namespace:pushpop"
+             x:Class="pushpop.ShellPage">
+    <Shell.FlyoutHeader>
+        <Frame BackgroundColor="LightBlue">
+            <Label Text="nohas" Margin="50" 
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </Frame>
+    </Shell.FlyoutHeader>
+    <FlyoutItem Title="Ruka" FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="krs">
+            <ShellContent Title="Prst" Icon="Screenshot.png">
+                <vivers:Page1/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <MenuItem Text="kolo">
+
+    </MenuItem>
+</Shell>

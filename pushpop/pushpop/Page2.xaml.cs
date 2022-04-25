@@ -14,7 +14,7 @@ namespace pushpop
     {
         public Page2()
         {
-            InitializeComponent();
+            
         }
     }
 }

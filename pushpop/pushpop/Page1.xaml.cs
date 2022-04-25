@@ -19,7 +19,6 @@ namespace pushpop
 
         private void butD_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Page2());
         }
     }
 }
